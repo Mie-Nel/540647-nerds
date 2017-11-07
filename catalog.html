@@ -5,67 +5,158 @@
 	<title>Catalog</title>
 </head>
 <body>
-	<div class="container">
-		<header class="page-header">
-			<h1 class="visually-hidden">Дизайн-студия Нердс</h1>
-			<a class="page-header-logo" href="index.html">
-				<img src="img/" width="200" height="150" alt="Логотип студии Нердс">
+  <header class="page-header">
+		<div class="container">
+		  <a class="page-header-logo" href="index.html">
+			  <img src="img/" width="200" height="150" alt="Логотип студии Нердс">
 			</a>
 			<nav class="main-nav">
 				<ul class="main-nav-list">
-					<li class="main-nav-item"><a class="main-nav-link" href="studio.html">Студия</a></li>
-					<li class="main-nav-item"><a class="main-nav-link" href="clients.html">Клиенты</a></li>
-					<li class="main-nav-item"><a class="main-nav-link">Магазин</a></li>
-					<li class="main-nav-item"><a class="main-nav-link" href="contacts.html">Контакты</a></li>
+					<li class="main-nav-item">
+						<a class="main-nav-link" href="studio.html">Студия
+						</a>
+					</li>
+					<li class="main-nav-item">
+						<a class="main-nav-link" href="clients.html">Клиенты
+						</a>
+					</li>
+					<li class="main-nav-item">
+						<a class="main-nav-link">Магазин
+						</a>
+					</li>
+					<li class="main-nav-item">
+						<a class="main-nav-link" href="contacts.html">Контакты
+						</a>
+					</li>
 				</ul>
 				<ul class="basket">
-					<li class="basket-item"><a class="basket-link" href="#">Корзина</a></li>
+					<li class="basket-item">
+						<a class="basket-link" href="#">Корзина
+						</a>
+					</li>
 				</ul>
 			</nav>
-		</header>
-		<div class="sidebar">
-		  <h1>магазин готовых шаблонов</h1>
-			<div class="filter">
-				<!-- Форма -->
+			<h1 class="page-title">магазин готовых шаблонов</h1>
+		</div>	
+	</header>
+		<main>
+		  <div class="form-catalog">
+					<!-- Форма -->
 			</div>
 			<div class="sort">
 				<p>Сортировать</p>
-					<ul class="sort-list">
-						<li class="sort-list-item"><a class="sort-list-link" href="#">по цене</a></li>
-						<li class="sort-list-item"><a class="sort-list-link" href="#">по типу</a></li>
-						<li class="sort-list-item"><a class="sort-list-link" href="#">по названию</a></li>
-						<li class="icon-up"><a class="icon-up-link" href="#"></a></li>
-						<li class="icon-down"><a class="icon-up-link" href="#"></a></li>
-					</ul>
-			 </div>
-		</div>	 
-			<main class="templates">
-				<div><span></span><img src="img/" alt="sedona" width="100" height="100"></div>
-				<div><span></span><img src="img/" alt="pink" width="100" height="100"></div>
-				<div><span></span><img src="img/" alt="borodinski" width="100" height="100"></div>
-				<div><span></span><img src="img/" alt="mishka" width="100" height="100"></div>
-				<div><span></span><img src="img/" alt="a plus" width="100" height="100"></div>
-				<div><span></span><img src="img/" alt="kvast" width="100" height="100"></div>
-				<div class="pagination">
-					<ul class="pagination-list">
-						<li class="pagination-item"><a class="pagination-link btn" href="#">1</a></li>
-						<li class="pagination-item"><a class="pagination-link btn" href="#">2</a></li>
-						<li class="pagination-item"><a class="pagination-link btn" href="#">3</a></li>
-						<li class="pagination-item"><a class="pagination-link btn next" href="#">следующая</a></li>
-					</ul>
-				</div>
-		</div>	
-		<section class="map-info">
-				<h3 class="visually-hidden">Адрес</h3>
+				<ul class="sort-list">
+					<li class="sort-item">
+						<a class="sort-link" href="#">по цене
+						</a>
+					</li>
+					<li class="sort-item">
+						<a class="sort-link" href="#">по типу
+						</a>
+					</li>
+					<li class="sort-item">
+						<a class="sort-link" href="#">по названию
+						</a>
+					</li>
+					<li class="icon-up">
+						<a class="icon-up-link" href="#">
+						 </a>
+					</li>
+					<li class="icon-down">
+						<a class="icon-down-link" href="#">
+						</a>
+					</li>
+				</ul>
+			</div>	 
+			<div class="catalog-content">
+				<article class="catalog-item">
+					<div class="catalog-item-heading"></div>
+					<img class="catalog-item-img" src="img/" alt="sedona" width="100" height="100">
+					<div class="catalog-item-popup">
+						<h2 class="item-title">sedona</h2>
+						<p class="item-text">Информационный сайт для туристов</p>
+						<a class="item-price-link btn" href="#">9 900 рублей</a>
+					</div>
+				</article>
+				<article class="catalog-item">
+					<div class="catalog-item-heading"></div>
+					<img class="catalog-item-img" src="img/" alt="pink" width="100" height="100">
+					<div class="catalog-item-popup">
+						<h2 class="item-title">pink app</h2>
+						<p class="item-text">Продуктовый лендинг приложения для iOS и Android</p>
+						<a class="item-price-link btn" href="#">9 900 рублей</a>
+					</div>
+				</article>
+				<article class="catalog-item">
+					<div class="catalog-item-heading"></div>
+					<img class="catalog-item-img" src="img/" alt="pink" width="100" height="100">
+					<div class="catalog-item-popup">
+						<h2 class="item-title">barbershop</h2>
+						<p class="item-text">Сайт салона красоты. Для мужчин, да.</p>
+						<a class="item-price-link btn" href="#">9 900 рублей</a>
+					</div>
+				</article>
+				<article class="catalog-item">
+				  <div class="catalog-item-heading"></div>
+					<img class="catalog-item-img" src="img/" alt="pink" width="100" height="100">
+					<div class="catalog-item-popup">
+						<h2 class="item-title">mishka</h2>
+						<p class="item-text">Интернет-магазин вязаных игрушек</p>
+						<a class="item-price-link btn" href="#">9 900 рублей</a>
+					</div>
+				</article>
+				<article class="catalog-item">
+					<div class="catalog-item-heading"></div>
+					<img class="catalog-item-img" src="img/" alt="pink" width="100" height="100">
+					<div class="catalog-item-popup">
+						<h2 class="item-title">a plus</h2>
+						<p class="item-text">Лендинг курсов повышения квалификации</p>
+						<a class="item-price-link btn" href="#">9 900 рублей</a>
+					</div>
+				</article>
+				<article class="catalog-item">
+					<div class="catalog-item-heading"></div>
+					<img class="catalog-item-img" src="img/" alt="pink" width="100" height="100">
+					<div class="catalog-item-popup">
+						<h2 class="item-title">kvast</h2>
+						<p class="item-text">Промо-сайт производителя крафтового кваса</p>
+						<a class="item-price-link btn" href="#">9 900 рублей</a>
+					</div>
+				</article>
+			</div>
+			<div class="pagination">
+				<ul class="pagination-list">
+					<li class="pagination-item">
+						<a class="pagination-link btn" href="#">1
+						</a>
+					</li>
+					<li class="pagination-item">
+						<a class="pagination-link btn" href="#">2
+						</a>
+					</li>
+					<li class="pagination-item">
+						<a class="pagination-link btn" href="#">3
+						</a>
+					</li>
+					<li class="pagination-item">
+						<a class="pagination-link btn next" href="#">следующая
+						</a>
+					</li>
+				</ul>
+		  </div>
+		 <section class="map-info">
+				<h3 class="visually-hidden map-info-title">Адрес</h3>
 				<img src="map" alt="Адрес" width="1500" height="400">
-				<p>NЁRDS DESIGN STUDIO</p>
-				<p>191186, Санкт-Петербург,<br> 
-				ул. Б. Конюшенная, д. 19/8</p>	
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="map-info-link btn" href="#">напишите нам</a>
+				<div class="adds">	
+					<p class="adds-text">NЁRDS DESIGN STUDIO</p>
+					<p class="adds-text">191186, Санкт-Петербург,<br> 
+					ул. Б. Конюшенная, д. 19/8</p>	
+					<p class="adds-text">тел. +7 (812) 275-75-75</p>
+					<a class="adds-link btn" href="#">напишите нам</a>
+				</div>	
 			</section>
 			<!-- Форма -->
-			</main>
+		</main>
 	<footer class="page-footer">
 	  <section class="socials">
 		  <h3 class="visually-hidden">Социальные сети</h3>
@@ -75,8 +166,10 @@
 				<li class="socials-list-item"><a class="socials-list-link ig" href=""></a></li>
 			</ul>
 		</section>	
-		<p>Давайте дружить, это выгодно!</p>
-		<p>Скидка 10% для друзей из социальных сетей.</p>	
+		<div class="footer-text">	
+				<p class="footer-text-slogan">Давайте дружить, это выгодно!</p>
+				<p class="footer-text-small">Скидка 10% для друзей из социальных сетей.</p>	
+			</div>
 	</footer>
 </body>
 </html>
