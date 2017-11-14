@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<title>Catalog</title>
 	</head>
 	<body>
@@ -36,8 +37,45 @@
 		</header>
 		<main>
 			<div class="container">
-				<div class="form-catalog">
-							<!-- Форма -->
+				<div class="filter-catalog">
+					<form class="filter-form" method="get">
+						<fieldset class="filter-price">
+							<legend>Стоимость</legend>
+							<label for="price"></label>
+							<input class="price-range" type="range" name="price" min="1" max="15000" id="price">
+						</fieldset>
+						<fieldset class="filter-grid">
+							<legend>Сетка</legend>
+							<label for="adaptive">
+							<input class="filter-radio" type="radio" name="adaptive" value="adaptive" id="adaptive" checked>Адаптивная
+							</label>
+							<label for="fixed">
+							<input class="filter-radio" type="radio" name="fixed" value="fixed" id="fixed">Фиксированная
+							</label>
+							<label for="rubber">
+							<input class="filter-radio" type="radio" name="rubber" value="rubber" id="rubber">Резиновая
+							</label>
+						</fieldset>
+						<fieldset class="filter-features">
+							<legend>Особенности</legend>
+							<label for="slide">
+								<input class="filter-checkbox" type="checkbox" name="slide" id="slide" value="slide" checked>Слайдер
+							</label>
+							<label for="features">
+								<input class="filter-checkbox" type="checkbox" name="features" id="features" value="features">Блок преимуществ
+							</label>
+							<label for="news">
+								<input class="filter-checkbox" type="checkbox" name="news" id="news" value="news" checked>Новости
+							</label>
+							<label for="gallery">
+								<input class="filter-checkbox" type="checkbox" name="gallery" id="gallery" value="gallery">Галерея
+							</label>
+							<label for="basket">
+								<input class="filter-checkbox" type="checkbox" name="basket" id="basket" value="basket">Корзина
+							</label>
+						</fieldset>
+						<button class="btn-form btn">Показать</button>
+					</form>		
 				</div>
 				<div class="sort">
 					<p>Сортировать</p>
@@ -141,6 +179,26 @@
 						<p class="adds-text">тел. +7 (812) 275-75-75</p>
 						<a class="adds-link btn" href="#">напишите нам</a>
 					</div>	
+				</section>
+				<!-- Форма -->
+				<section class="modal">
+					<form class="write-us-form" method="post">
+						<h3 class="title-form">Напишите нам</h3>
+						<div class="name-form">
+							<label for="name">Ваше имя</label>
+							<input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+						</div>
+						<div class="email-form">
+							<label for="email">Ваш email</label>
+							<input id="email" type="email" name="email" placeholder="Для отправки ответа">
+						</div>
+						<div class="reply-form">
+							<label for="reply">Текст письма</label>
+							<input id="reply" type="textarea" name="reply" placeholder="В свободной форме">
+						<div>
+						<button class="btn-form btn" type="submit">Отправить</button>
+						<button class="close visually-hidden" type="button">Закрыть</button>
+					</form>
 				</section>
 				<!-- Форма -->
 			</div>	
