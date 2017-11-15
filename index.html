@@ -167,24 +167,23 @@
 		</footer>
 		<!-- Форма -->
 		<section class="modal">
-			<h2 class="title-form">Напишите нам</h2>
-			<form class="write-us-form" method="post">
-				<div class="name-form">
-					<label for="name">Ваше имя</label>
-					<input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-				</div>
-				<div class="email-form">
-					<label for="email">Ваш email</label>
-					<input id="email" type="email" name="email" placeholder="Для отправки ответа">
-				</div>
-				<div class="reply-form">
-					<label for="reply">Текст письма</label>
-					<input id="reply" type="text" name="reply" placeholder="В свободной форме">
-				</div>
+			<button class="modal-close" aria-label="close" type="button"></button>
+			<h2 class="modal-title">Напишите нам</h2>
+			<form class="modal-form" method="post">
+				<label class="field-text">
+					<span class="field-text-label">Ваше имя</span>
+					<input class="field-text-input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+				</label>
+				<label class="field-text">
+					<span class="field-text-label">Ваш email</span>
+					<input class="field-text-input" type="email" name="email" placeholder="Для отправки ответа">
+				</label>	
+				<label class="field-text">
+					<span class="field-text-label">Текст письма</span>
+					<input class="field-text-input" type="text" name="reply" placeholder="В свободной форме">
+				</label>	
 				<button class="btn-form btn" type="submit">Отправить</button>
-				<button class="close visually-hidden" type="button">Закрыть</button>
 			</form>
 		</section>
-		<!-- Форма -->
 	</body>
 </html>

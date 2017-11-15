@@ -37,41 +37,48 @@
 		</header>
 		<main>
 			<div class="container">
-				<div class="filter-catalog">
-					<form class="filter-form" method="get">
-						<fieldset class="filter-price">
-							<legend>Стоимость</legend>
-							<label for="price"></label>
-							<input class="price-range" type="range" name="price" min="1" max="15000" id="price">
+				<div class="form-catalog">
+					<form class="filter-form" method="post">
+						<fieldset class="form-group">
+							<legend class="form-group-title">Стоимость</legend>
+							
 						</fieldset>
-						<fieldset class="filter-grid">
-							<legend>Сетка</legend>
-							<label for="adaptive">
-							<input class="filter-radio" type="radio" name="adaptive" value="adaptive" id="adaptive" checked>Адаптивная
+						<fieldset class="form-group">
+							<legend class="form-group-title">Сетка</legend>
+							<label class="field-radio">
+							<input class="field-radio-input" type="radio" name="adaptive" value="adaptive" checked>
+							<span class="field-radio-label">Адаптивная</span>
 							</label>
-							<label for="fixed">
-							<input class="filter-radio" type="radio" name="fixed" value="fixed" id="fixed">Фиксированная
+							<label class="field-radio">
+							<input class="field-radio-input" type="radio" name="fixed" value="fixed">
+							<span class="field-radio-label">Фиксированная</span>
 							</label>
-							<label for="rubber">
-							<input class="filter-radio" type="radio" name="rubber" value="rubber" id="rubber">Резиновая
+							<label class="field-radio">
+							<input class="field-radio-input" type="radio" name="rubber" value="rubber">
+							<span class="field-radio-label">Резиновая</span>
 							</label>
 						</fieldset>
-						<fieldset class="filter-features">
-							<legend>Особенности</legend>
-							<label for="slide">
-								<input class="filter-checkbox" type="checkbox" name="slide" id="slide" value="slide" checked>Слайдер
+						<fieldset class="form-group">
+							<legend class="form-group-title">Особенности</legend>
+							<label class="field-checkbox">
+								<input class="field-checkbox-input" type="checkbox" name="slide" value="slide" checked>
+								<span class="field-checkbox-label">Слайдер</span>
 							</label>
-							<label for="features">
-								<input class="filter-checkbox" type="checkbox" name="features" id="features" value="features">Блок преимуществ
+							<label class="field-checkbox">
+								<input class="field-checkbox-input" type="checkbox" name="features" value="features">
+								<span class="field-checkbox-label">Блок преимуществ</span>
 							</label>
-							<label for="news">
-								<input class="filter-checkbox" type="checkbox" name="news" id="news" value="news" checked>Новости
+							<label class="field-checkbox">
+								<input class="field-checkbox-input" type="checkbox" name="news" value="news" checked>
+								<span class="field-checkbox-label">Новости</span>
 							</label>
-							<label for="gallery">
-								<input class="filter-checkbox" type="checkbox" name="gallery" id="gallery" value="gallery">Галерея
+							<label class="field-checkbox">
+								<input class="field-checkbox-input" type="checkbox" name="gallery" value="gallery">
+								<span class="field-checkbox-label">Галерея</span>
 							</label>
-							<label for="basket">
-								<input class="filter-checkbox" type="checkbox" name="basket" id="basket" value="basket">Корзина
+							<label class="field-checkbox">
+								<input class="field-checkbox-input" type="checkbox" name="basket" value="basket">
+								<span class="field-checkbox-label">Корзина</span>
 							</label>
 						</fieldset>
 						<button class="btn-form btn">Показать</button>
@@ -206,24 +213,23 @@
 		</footer>
 <!-- Форма -->
 		<section class="modal">
-			<h2 class="title-form">Напишите нам</h2>
-			<form class="write-us-form" method="post">
-				<div class="name-form">
-					<label for="name">Ваше имя</label>
-					<input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-				</div>
-				<div class="email-form">
-					<label for="email">Ваш email</label>
-					<input id="email" type="email" name="email" placeholder="Для отправки ответа">
-				</div>
-				<div class="reply-form">
-					<label for="reply">Текст письма</label>
-					<input id="reply" type="text" name="reply" placeholder="В свободной форме">
-				</div>
+			<button class="modal-close" aria-label="close" type="button"></button>
+			<h2 class="modal-title">Напишите нам</h2>
+			<form class="modal-form" method="post">
+				<label class="field-text">
+					<span class="field-text-label">Ваше имя</span>
+					<input class="field-text-input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+				</label>
+				<label class="field-text">
+					<span class="field-text-label">Ваш email</span>
+					<input class="field-text-input" type="email" name="email" placeholder="Для отправки ответа">
+				</label>	
+				<label class="field-text">
+					<span class="field-text-label">Текст письма</span>
+					<input class="field-text-input" type="text" name="reply" placeholder="В свободной форме">
+				</label>	
 				<button class="btn-form btn" type="submit">Отправить</button>
-				<button class="close visually-hidden" type="button">Закрыть</button>
 			</form>
 		</section>
-		<!-- Форма -->
 	</body>
 </html>
