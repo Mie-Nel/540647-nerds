@@ -3,13 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>Catalog</title>
 	</head>
 	<body>
 		<header class="page-header">
 			<div class="container">
 				<a class="page-header-logo" href="index.html">
-					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нердс">
+					<img class="logo-img" src="img/nerds-logo.svg" href="index.html" width="160" height="65" alt="Логотип студии Нердс">
 				</a>
 				<nav class="main-nav">
 					<ul class="main-nav-list">
@@ -20,7 +21,7 @@
 							<a class="main-nav-link" href="clients.html">Клиенты</a>
 						</li>
 						<li class="main-nav-item">
-							<a class="main-nav-link">Магазин</a>
+							<a class="main-nav-link active">Магазин</a>
 						</li>
 						<li class="main-nav-item">
 							<a class="main-nav-link" href="contacts.html">Контакты</a>
@@ -218,15 +219,15 @@
 			<form class="modal-form" method="post">
 				<label class="field-text">
 					<span class="field-text-label">Ваше имя:</span>
-					<input class="field-text-input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+					<input class="field-text-input" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
 				</label>
 				<label class="field-text">
 					<span class="field-text-label">Ваш email:</span>
-					<input class="field-text-input" type="email" name="email" placeholder="Для отправки ответа">
+					<input class="field-text-input" type="email" name="email" placeholder="Для отправки ответа" required>
 				</label>	
 				<label class="field-text">
 					<span class="field-text-label">Текст письма:</span>
-					<input class="field-text-input" type="text" name="reply" placeholder="В свободной форме">
+					<input class="field-text-input" type="text" name="reply" placeholder="В свободной форме" required>
 				</label>	
 				<button class="btn-form btn" type="submit">Отправить</button>
 			</form>

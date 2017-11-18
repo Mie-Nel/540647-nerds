@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>HTML Academy: Нёрдс</title>
 	</head>
 	<body>
@@ -93,7 +94,7 @@
 						<table class="addition-table">
 							<caption class="addition-table-title">с 2004 года Любим точность во всем:</caption>
 							<tr>
-								<th>46<sup>%</sup></th>
+								<th>146<sup>%</sup></th>
 								<th>100<sup>%</sup></th>
 								<th>50<sup>%</sup></th>
 							</tr>
@@ -172,15 +173,15 @@
 			<form class="modal-form" method="post">
 				<label class="field-text">
 					<span class="field-text-label">Ваше имя:</span>
-					<input class="field-text-input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+					<input class="field-text-input" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
 				</label>
 				<label class="field-text">
 					<span class="field-text-label">Ваш email:</span>
-					<input class="field-text-input" type="email" name="email" placeholder="Для отправки ответа">
+					<input class="field-text-input" type="email" name="email" placeholder="Для отправки ответа" required>
 				</label>	
 				<label class="field-text">
 					<span class="field-text-label">Текст письма:</span>
-					<input class="field-text-input" type="text" name="reply" placeholder="В свободной форме">
+					<input class="field-text-input" type="text" name="reply" placeholder="В свободной форме" required>
 				</label>	
 				<button class="btn-form btn" type="submit">Отправить</button>
 			</form>
