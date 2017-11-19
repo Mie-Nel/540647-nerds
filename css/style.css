@@ -1,12 +1,23 @@
 body {
-	padding: 0;
-	margin: 0;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
-	background-color: #ffffff;
 }
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	line-height: 18px;
+	font-weight: 500;
+	color: #ffffff;
+	background-color: #fb565a;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 .visually-hidden {
 	position: absolute;
 	overflow: hidden;
@@ -17,197 +28,247 @@ body {
 	padding: 0;
 	border: 0;
 }
+
 .page-header {
 	background-color: #eeeeee;
 }
+
 .logo-img:hover {
 	opacity: 0.8;
 }
+
 .logo-img:active {
 	opacity: 0.3;
 }
-a {
-	text-decoration: none;
-}
+
 .main-nav-list, 
-.basket,
-.description-list,
-.partners-logo-list,
-.socials-list,
-.sort-list,
-.pagination-list{
+.basket {
 	list-style: none;
 }
+
 .main-nav-link,
 .basket-link {
 	color: #000000;
 	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 500;
 }
+
 .main-nav-link:hover,
 .basket-link:hover {
 	color: #fb565a;
 }
+
 .main-nav-link:active,
 .basket-link:active {
 	color: #000000;
 	opacity: 0.3;
 }
-.active {
+
+.main-nav-link.active {
 	border-bottom: 1px solid #fb565a;
 }
+
 .slide-title {
 	font-size: 55px;
 	line-height: 55px;
+	font-weight: 500;
 }
-.slide-text,
-.feature-text,
-.description-text,
-.description-item {
+
+.slide-text {
 	color: #283136;
 }
-.btn {
-	line-height: 18px;
-	color: #ffffff;
-	background-color: #fb565a;
-	width: 260px;
-	height: 50px;
-	text-transform: uppercase;
-	text-align: center;
-}
+
 .slide-link:hover {
 	background-color: #e74246;
 }
+
 .slide-link:active {
 	background-color: #d7373b;
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.10);
 }
+
+.feature-title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.feature-text {
+	color: #283136;
+}
 .feature-link:hover {
 	background-color: #e74246;
 }
+
 .feature-link:active {
 	background-color: #d7373b;
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.10)
 }
+
 .feature-item:nth-child(2) .feature-link {
 	background-color: #00ca74;
 }
+
 .feature-item:nth-child(2) .feature-link:hover {
 	background-color: #00bc6c;
 }
+
 .feature-item:nth-child(2) .feature-link:active {
 	background-color: #00aa62;
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.10)
 }
+
 .feature-item:nth-child(3) .feature-link {
 	background-color: #efc84a;
 }
+
 .feature-item:nth-child(3) .feature-link:hover {
 	background-color: #eab534;
 }
+
 .feature-item:nth-child(3) .feature-link:active {
 	background-color: #e5a722;
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.10)
 }
-.feature-title {
-	font-size: 24px;
-	line-height: 30px;
-}
+
 .description-text:nth-child(2) {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
 }
+
+.description-text:nth-child(3),
+.description-item {
+	color: #283136;
+}
+
+.description-list {
+	list-style: none;
+}
+
 .description-list-title {
+	font-weight: bold;
 	text-transform: uppercase;
 }
+
 .addition-table-title {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.partners-logo-link-img {
-	opacity: 0.2;
-}
-.partners-logo-link-img:hover {
-	opacity: 1;
-}
-.partners-logo-link-img:active {
-	opacity: 0.1;
-}
-th {
+
+.addition-table-number {
+	font-size: 45px;
+	line-height: 10px;
 	font-weight: bold;
 }
-td {
+
+.addition-table-number sup {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.addition-table-text {
 	line-height: 18px;
 	color: #283136;
 }
+
+.partners-logo-list {
+	list-style: none;
+}
+.partners-logo-link-img {
+	opacity: 0.2;
+}
+
+.partners-logo-link-img:hover {
+	opacity: 1;
+}
+
+.partners-logo-link-img:active {
+	opacity: 0.1;
+}
+
 .adds-title {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
 }
+
 .adds-text {
-	line-height: 30px;
+	line-height: 18px;
 	color: #666666;
 }
-/*.adds-link:hover {
-	background-color: #e74246;
+
+.socials-list {
+	list-style: none;
 }
-.adds-link:active {
-	background-color: #d7373b;
-	color: rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.10);*/
-}
+
 .footer-text-slogan {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: bold;
 }
+
 .footer-text-small {
 	line-height: 22px;
 	color: #444444;
 }
+
 .modal-title {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
 }
+
 .field-text-label {
 	line-height: 18px;
 	font-weight: bold;
 }
+
 .field-text-input {
 	border: 2px solid #d7dcde; 
 }
+
 .field-text-input:hover {
-	border: 2px solid  #b4b9bb;
+	border: 2px solid #b4b9bb;
 }
+
 .field-text-input:focus {
 	border: 2px solid #000000;
 }
+
 .field-text-input:focus:invalid {
 	border: 2px solid #e74246;
 }
+
 .page-title {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
 }
+
 .form-group {
 	border: none;
 }
+
 .form-group-title {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
+	text-transform: uppercase;
 }
-.form-group span {
+
+.field-radio-label,
+.field-checkbox-label {
 	line-height: 20px;
 	color: #283136;
 }
+
 .btn-form {
 	font: inherit;
 	line-height: 18px;
@@ -215,30 +276,43 @@ td {
 	border: none;
 	color: #000000;
 }
+
 .btn-form:hover {
 	background-color: #dfdfdf;
 }
+
 .btn-form:focus {
 	background-color: #d5d5d5;
 	color: rgba(0, 0, 0, 0.3);
 	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.10)
 }
-.sort p {
+
+.sort-title {
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: bold;
+	text-transform: uppercase;
 }
+
+.sort-list {
+	list-style: none;
+}
+
 .sort-link {
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 14px;
 	line-height: 18px;
+	text-transform: uppercase;
 }
+
 .sort-link:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
+
 .sort-link:active {
 	color: #000000;
 }
+
 .catalog-item-popup-title {
 	font-size: 18px;
 	line-height: 30px;
@@ -246,24 +320,34 @@ td {
 	color: #000000;
 	text-transform: uppercase;
 }
+
 .catalog-item-popup-text {
 	line-height: 18px;
 	color: #666666;
 }
+
 .catalog-item-popup-price-link:hover {
 	background-color: #e74246;
 }
+
 .catalog-item-popup-price-link:active {
 	background-color: #d7373b;
 }
+
+.pagination-list {
+	list-style: none;
+}
+
 .pagination-link {
 	line-height: 18px;
 	background-color: #eeeeee;
 	color: #000000;
 }
+
 .pagination-link:hover {
 	background-color: #dfdfdf;
 }
+
 .pagination-link:active {
 	background-color: #d5d5d5;
 	color: rgba(0, 0, 0, 0.3);
