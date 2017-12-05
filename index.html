@@ -39,26 +39,29 @@
 				</div>
 				<!-- Слайдер -->
 				<section class="slides">
+					<input class="visually-hidden" id="product-1" type="radio" name="toggle" checked>
+					<input class="visually-hidden" id="product-2" type="radio" name="toggle">
+					<input class="visually-hidden" id="product-3" type="radio" name="toggle">
 					<div class="slide-control">
-						<div class="slide-control-btn current"></div>
-						<div class="slide-control-btn"></div>
-						<div class="slide-control-btn"></div>
+						<label class="slide-control-btn item-1" for="product-1"></label>
+						<label class="slide-control-btn item-2" for="product-2"></label>
+						<label class="slide-control-btn item-3" for="product-3"></label>
 					</div>
-					<div class="slide">
+					<div class="slide1">
 						<div class="slide-description">
 							<h2 class="slide-title">Долго, дорого, скрупулезно.</h2>
 							<p class="slide-text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
 							<a class="slide-link btn" href="#">Узнать больше</a>
 						</div>
 					</div>
-					<div class="slide">
+					<div class="slide2">
 						<div class="slide-description">
 							<h2 class="slide-title">Любим математику как никто другой.</h2>
 							<p class="slide-text">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
 							<a class="slide-link btn" href="#">Узнать больше</a>
 						</div>
 					</div>
-					<div class="slide">
+					<div class="slide3">
 						<div class="slide-description">
 							<h2 class="slide-title">Только ночь, только хардкор</h2>
 							<p class="slide-text">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
@@ -99,9 +102,9 @@
 						превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<p class="description-list-title">Выполняем заказы на разработку:</p>
 						<ul class="description-list">
-							<li class="description-item"> Веб-сайтов любой сложности</li>
-							<li class="description-item"> Мобильных приложений для iOS и Android</li>
-							<li class="description-item"> Слайдшоу и видео для корпоративных презентаций</li>
+							<li class="description-item">Веб-сайтов любой сложности</li>
+							<li class="description-item">Мобильных приложений для iOS и Android</li>
+							<li class="description-item">Слайдшоу и видео для корпоративных презентаций</li>
 						</ul>
 					</div>
 					<div class="addition">
@@ -222,7 +225,7 @@
 				</label>
 				<label class="field-text">
 					<span class="field-text-label">Текст письма:</span>
-					<textarea class="field-text-input" name="reply" placeholder="В свободной форме"></textarea>
+					<textarea class="field-text-input" rows="5" name="reply" placeholder="В свободной форме"></textarea>
 				</label>
 				<button class="modal-btn btn" type="submit">Отправить</button>
 			</form>

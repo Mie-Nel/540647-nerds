@@ -46,44 +46,60 @@
 						<form class="filter-form" method="post">
 							<fieldset class="form-group">
 								<legend class="form-group-title">Стоимость:</legend>
-								
+								<div class="filter-range">
+									<div class="range-controls">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+										<div class="toggle toggle-min"></div>
+										<div class="toggle toggle-max"></div>
+									</div>
+									<div class="price-controls">
+										<label class="min-price">от
+											<input class="field-price" type="text" name="min-price" value="0">
+										</label>
+										<label class="max-price">до
+											<input class="field-price" type="text" name="max-price" value="15000">
+										</label>
+									</div>
+								</div>	
 							</fieldset>
 							<fieldset class="form-group">
 								<legend class="form-group-title">Сетка:</legend>
 								<label class="field-radio">
-									<input class="field-radio-input visually-hidden" type="radio" name="type-product" value="adaptive" checked>
-									<span class="field-radio-label">Адаптивная</span>
+									<input class="field-radio-input visually-hidden" type="radio" name="type-product" value="adaptive">
+									<span class="field-radio-label" tabindex="0">Адаптивная</span>
 								</label>
 								<label class="field-radio">
 									<input class="field-radio-input visually-hidden" type="radio" name="type-product" value="fixed">
-									<span class="field-radio-label">Фиксированная</span>
+									<span class="field-radio-label" tabindex="0">Фиксированная</span>
 								</label>
 								<label class="field-radio">
 									<input class="field-radio-input visually-hidden" type="radio" name="type-product" value="rubber">
-									<span class="field-radio-label">Резиновая</span>
+									<span class="field-radio-label" tabindex="0">Резиновая</span>
 								</label>
 							</fieldset>
 							<fieldset class="form-group">
 								<legend class="form-group-title">Особенности:</legend>
 								<label class="field-checkbox">
-									<input class="field-checkbox-input visually-hidden" type="checkbox" name="slide" value="slide" checked>
-									<span class="field-checkbox-label">Слайдер</span>
+									<input class="field-checkbox-input visually-hidden" type="checkbox" name="slide" value="slide">
+									<span class="field-checkbox-label" tabindex="0">Слайдер</span>
 								</label>
 								<label class="field-checkbox">
 									<input class="field-checkbox-input visually-hidden" type="checkbox" name="features" value="features">
-									<span class="field-checkbox-label">Блок преимуществ</span>
+									<span class="field-checkbox-label" tabindex="0">Блок преимуществ</span>
 								</label>
 								<label class="field-checkbox">
-									<input class="field-checkbox-input visually-hidden" type="checkbox" name="news" value="news" checked>
-									<span class="field-checkbox-label">Новости</span>
+									<input class="field-checkbox-input visually-hidden" type="checkbox" name="news" value="news">
+									<span class="field-checkbox-label" tabindex="0">Новости</span>
 								</label>
 								<label class="field-checkbox">
 									<input class="field-checkbox-input visually-hidden" type="checkbox" name="gallery" value="gallery">
-									<span class="field-checkbox-label">Галерея</span>
+									<span class="field-checkbox-label" tabindex="0">Галерея</span>
 								</label>
 								<label class="field-checkbox">
-									<input class="field-checkbox-input visually-hidden" type="checkbox" name="basket" value="basket">
-									<span class="field-checkbox-label">Корзина</span>
+									<input class="field-checkbox-input visually-hidden" type="checkbox" name="basket" value="basket" disabled>
+									<span class="field-checkbox-label" tabindex="0">Корзина</span>
 								</label>
 							</fieldset>
 							<button class="btn-form btn">Показать</button>
@@ -171,7 +187,7 @@
 				<div class="pagination">
 					<ul class="pagination-list">
 						<li class="pagination-item">
-							<a class="pagination-link btn" href="#">1</a>
+							<a class="pagination-link btn active-page" href="#">1</a>
 						</li>
 						<li class="pagination-item">
 							<a class="pagination-link btn" href="#">2</a>
