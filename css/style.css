@@ -44,6 +44,7 @@ input[type="radio"].visually-hidden {
 	border: none;
 	outline: none;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 .btn:hover {
@@ -180,7 +181,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	left: 51%;
 	bottom: 97px;
-	z-index: 100;
+	z-index: 1;
 	width: 160px;
 	height: 18px;
 	text-align: center;
@@ -205,7 +206,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	z-index: 2;
+	z-index: 1;
 	width: 4px;
 	height: 4px;
 	margin: -4px;
@@ -477,9 +478,13 @@ input[type="radio"].visually-hidden {
 .map-info {
 	position: relative;
 	margin-bottom: 60px;
+	height: 416px;
 }
 
-.map-info img {
+.map-img {
+	position: absolute;
+	top: 0;
+	z-index: -1;
 	height: 416px;
 }
 
@@ -581,12 +586,19 @@ input[type="radio"].visually-hidden {
 .modal {
 	display: none;
 	position: fixed;
-	top: 100px;
-	width: 70vw;
-	height: 70vh;
+	bottom: 10px;
+	z-index: 3;
+	left: 50%;
+	width: 960px;
 	padding: 75px 100px;
+	margin-left: -480px;
+	box-sizing: border-box;
 	background-color: #ffffff;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5)
+}
+
+.modal-show {
+	display: block;
 }
 
 .modal-close {
@@ -600,7 +612,7 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 	background-image: url(../img/close-cross.svg);
 	opacity: 0.3;
-	background-color: #ffffff
+	background-color: #ffffff;
 }
 
 .modal-close:hover,
@@ -613,8 +625,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-title {
-	padding-bottom: 50px;
 	margin: 0;
+	margin-bottom: 50px;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -629,7 +641,7 @@ input[type="radio"].visually-hidden {
 
 .field-text-label {
 	display: block;
-	padding-bottom: 10px;
+	padding-bottom: 9px;
 	line-height: 18px;
 	font-weight: bold;
 }
@@ -734,7 +746,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls .bar {
 	width: 70%;
-	height: 2px;
+	height: 2px;img
 	background-color: #00ca74;
 }
 
@@ -866,6 +878,8 @@ input[type="radio"].visually-hidden {
 	opacity: 1;
 }
 
+.field-radio-input:disabled + .field-radio-label,
+.field-radio-input:disabled + .field-radio-label::before,
 .field-checkbox-input:disabled + .field-checkbox-label,
 .field-checkbox-input:disabled + .field-checkbox-label::before {
 	opacity: 0.4;
@@ -989,7 +1003,8 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 30px;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus {
 	box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25)
 }
 
@@ -1041,11 +1056,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-popup-price-link {
 	padding: 15px 60px;
-}
-
-.catalog-item-popup-price-link:hover,
-.catalog-item-popup-price-link:focus {
-	color: rgba(255, 255, 255, 1);
 }
 
 .catalog-item-popup-price-link:active {
