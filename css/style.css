@@ -519,10 +519,18 @@ input[type="radio"].visually-hidden {
 	height: 416px;
 }
 
+.container-adds {
+	position: relative;
+	top: -418px;
+	width: 1160px;
+	min-height: 312px;
+	margin: 0 auto;
+}
+
 .adds {
 	position: absolute;
-	top: 53px;
-	left: 95px;
+	top: 50px;
+	left: 0;
 	width: 320px;
 	padding: 50px;
 	-webkit-box-sizing: border-box;
@@ -916,6 +924,7 @@ input[type="radio"].visually-hidden {
 	min-width: 130px;
 	font-size: 16px;
 	text-transform: uppercase;
+	outline: none;
 }
 
 .max-price {
@@ -927,6 +936,7 @@ input[type="radio"].visually-hidden {
 	padding: 8px 10px;
 	margin-left: 10px;
 	border: none;
+	outline: none;
 	background-color: #eeeeee;
 	border-radius: 5px;
 	font: inherit;
@@ -939,6 +949,7 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle;
 	padding-right: 50px;
 	padding-bottom: 15px;
+	outline: none;
 	line-height: 20px;
 	color: #283136;
 }
@@ -975,13 +986,6 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 0.3;
-}
-
-.field-radio-label:hover,
-.field-checkbox-label:hover,
-.field-radio-label:focus,
-.field-checkbox-label:hover {
-	outline: none;
 }
 
 .field-radio-label:hover::before,
