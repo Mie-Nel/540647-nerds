@@ -703,7 +703,7 @@ input[type="radio"].visually-hidden {
 .modal {
 	display: none;
 	position: fixed;
-	bottom: 10px;
+	bottom: 180px;
 	z-index: 3;
 	left: 50%;
 	width: 960px;
